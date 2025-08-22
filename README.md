@@ -14,3 +14,9 @@ A small helper GUI to scan/change IDs, send position, and switch ACE1/ACE2 maste
 ```bash
 pip install pyserial>=3.5
 python volz_gui.py
+
+# Optional: build tool for EXE packaging
+pip install pyinstaller>=6
+pyinstaller -w volz_gui.py --name VolzRS485Tool ^
+  --hidden-import=serial.tools.list_ports --hidden-import=serial.tools.list_ports_windows
+
