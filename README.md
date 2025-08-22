@@ -12,5 +12,5 @@ A small helper GUI to scan/change IDs, send position, and switch ACE1/ACE2 maste
 
 ## Install
 ```bash
-pip install -r requirements.txt
+pip install pyserial>=3.5
 python volz_gui.py
